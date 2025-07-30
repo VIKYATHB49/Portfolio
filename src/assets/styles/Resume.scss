@@ -1,0 +1,100 @@
+.resume {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+
+  .section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #222;
+    position: relative;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, #ff5f6d, #ffc371, #47cacc, #8e44ad, #3498db);
+      background-size: 300% 100%;
+      animation: underlineShift 4s infinite ease-in-out;
+      border-radius: 2px;
+    }
+  }
+
+  .resume-description {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    color: #333;
+
+    p {
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+
+    strong {
+      color: #5e17eb;
+    }
+  }
+
+  .resume-pdf {
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    border: none;
+    margin: 2rem auto;
+  }
+
+  .download-btn-wrapper {
+    text-align: center;
+  }
+
+  .download-btn {
+    background-color: #5e17eb;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: #4312b8;
+    }
+  }
+}
+
+/* Responsive iframe */
+@media screen and (max-width: 1024px) {
+  .resume .resume-pdf {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resume .resume-pdf {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .resume .resume-pdf {
+    height: 300px;
+  }
+}
+
+/* Animated underline */
+@keyframes underlineShift {
+  0%, 100% {
+    background-position: 0% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}

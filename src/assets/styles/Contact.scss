@@ -1,0 +1,114 @@
+.contact {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #fefefe;
+  font-family: 'Poppins', sans-serif;
+
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #5e17eb, #00c3ff);
+      border-radius: 2px;
+    }
+  }
+
+  .sub-text {
+    font-size: 1rem;
+    margin: 1.5rem 0 2.5rem;
+    color: #666;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      padding: 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      min-height: 150px;
+    }
+
+    button {
+      padding: 0.8rem;
+      background: #5e17eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #4312b8;
+      }
+    }
+  }
+
+  .status-message {
+    margin-top: 1rem;
+    color: #e74c3c;
+    font-weight: 500;
+  }
+
+  .popup-message {
+    margin-top: 1.5rem;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-weight: 600;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-icons {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+
+    a {
+      font-size: 2rem;
+      color: #5e17eb;
+      transition: transform 0.3s, color 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        color: #4312b8;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    form {
+      width: 90%;
+    }
+
+    .popup-message {
+      width: 90%;
+    }
+  }
+}
