@@ -42,7 +42,7 @@ const experiences = [
 const educations = [
   {
     institution: 'Anurag University',
-    degree: 'B.Sc in Computer Science',
+    degree: 'B.Tech in Computer Science',
     dates: 'Oct 2021 – May 2025',
     location: 'Hyderabad, Telangana',
     extra: 'CGPA: 8.68',
